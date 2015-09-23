@@ -7,7 +7,7 @@
 		revision="1.0.0"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150918113253"/>
+		date="20150923130502"/>
 	<dependencies>
 		<module organisation="com.github.scala-blitz" name="scala-blitz_2.11">
 			<revision name="1.1" status="release" pubdate="20140617084800" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-blitz.github.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="28">
@@ -334,9 +334,10 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.10.5" status="release" pubdate="20150227025430" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.5/" downloaded="false" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
-				<metadata-artifact status="no" details="" size="2669" time="0" location="/Users/sahinfurkan/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.5.xml" searched="true" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5.pom"/>
+			<revision name="2.10.6" status="release" pubdate="20150918113528" resolver="public" artresolver="public" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.6/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html
+         "/>
+				<metadata-artifact status="successful" details="" size="2044" time="119" location="/Users/sahinfurkan/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.6.xml" searched="true" original-local-location="/Users/sahinfurkan/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.6/scala-library-2.10.6.pom"/>
 				<evicted-by rev="2.11.5"/>
 				<caller organisation="com.netflix.rxjava" name="rxjava-scala" conf="default, compile, runtime, master" rev="2.10.+" rev-constraint-default="2.10.+" rev-constraint-dynamic="2.10.+" callerrev="0.15.0"/>
 				<artifacts>

@@ -9,14 +9,13 @@ object Main {
         print(pascal(col, row) + " ")
       println()
     }
-    print(balance(":())(".toList))
   }
 
-  def factorial(c: Int): Int = if (c == 0) 1 else c * factorial(c-1);
+  def factorial(c: Int): Int = if (c == 0) 1 else c * factorial(c-1)
   /**
    * Exercise 1
    */
-  def pascal(c: Int, r: Int): Int = factorial(r) / (factorial(c) * factorial(r-c));
+  def pascal(c: Int, r: Int): Int = if (c != 0 && r != c) factorial(r) / (factorial(c) * factorial(r-c)) else 1
 
   /**
    * Exercise 2
@@ -32,11 +31,19 @@ object Main {
       else findBalance(chars.tail, open, close)
     }
 
-    if (!chars.isEmpty) findBalance(chars, 0, 0) else true;
+    if (!chars.isEmpty) findBalance(chars, 0, 0) else true
   }
 
   /**
    * Exercise 3
    */
-  def countChange(money: Int, coins: List[Int]): Int = ???
+  //This is a simple to be or not to be problem, a coin can be in a sum or not... -the else part-
+  def countChange(money: Int, coins: List[Int]): Int = {
+    if (money == 0)
+      1
+    else if (money > 0 && !coins.isEmpty)
+      countChange(money-coins.head, coins) + countChange(money, coins.tail)
+    else
+      0
+  }
 }
